@@ -1,0 +1,57 @@
+.Form {
+    max-width: 46rem;
+    height: 3.375rem;
+
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+    margin-top: -1.6875rem;
+}
+
+.Form input {
+    width: 39.875rem;
+    height: 100%;
+
+    padding: 1rem;
+
+    border: 1px solid var(--gray-700);
+    border-radius: .5rem;
+
+    background: var(--gray-500, #262626);
+
+    color: var(--gray-300);
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.Form input:focus {
+    border: 1px solid var(--purple-dark);
+    background: var(--gray-500);
+    color: var(--gray-100);
+}
+
+.Form button {
+    height: 100%;
+
+    display: inline-flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+
+    border-radius: .5rem;
+    background-color: var(--blue-dark);
+
+    color: var(--gray-100);
+    font-weight: 700;
+    line-height: 140%;
+
+    cursor: pointer;
+}
+
+.Form button:hover {
+    background-color: var(--blue);
+}

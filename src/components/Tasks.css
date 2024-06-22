@@ -1,0 +1,94 @@
+.Tasks {
+    max-width: 46rem;
+    width: 100%;
+
+    min-height: 70%;
+
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 24px;
+
+}
+
+.Tasks header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Tasks header p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Tasks header p:first-child {
+    color: var(--blue);
+}
+
+.Tasks header p:last-child {
+    color: var(--purple);
+}
+
+.Tasks header p span {
+    padding: 0.125rem .5rem;
+
+    margin-left: .625rem;
+
+    color: var(--gray-200);
+    font-size: .75rem;
+    font-weight: 700;
+
+    border-radius: 999px;
+    background: var(--gray-400);
+}
+
+
+.Tasks-Lists {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    min-height: 15.25rem;
+    max-height: 25.5rem;
+
+    overflow-y: auto;
+}
+
+.Tasks-Lists:has(>.Tasks-Lists-No-Content) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* There's no task */
+.Tasks-Lists-No-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.Tasks-Lists .Tasks-Lists-No-Content .Tasks-Lists-Message {
+    color: var(--gray-300);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.Tasks-Lists-No-Content .Tasks-Lists-Message h3 {
+    font-weight: 700;
+}
+
+.Tasks-Lists-No-Content .Tasks-Lists-Message h4 {
+    font-weight: 400;
+}
+
+/* There's task */

@@ -1,0 +1,58 @@
+.Header {
+    width: 100%;
+    height: 12.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+
+    background-color: var(--gray-700);
+}
+
+.Header img {
+    height: 2.25rem;
+}
+
+.Header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.Header h1 span:nth-child(1) {
+    color: var(--blue);
+}
+
+.Header h1 span:nth-child(2) {
+    color: var(--purple-dark)
+}
+
+.Main {
+    height: calc(100vh - 12.5rem);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+
+    background-color: var(--gray-600);
+}
+
+footer {
+    align-self: center;
+
+    color: var(--gray-300);
+
+    background-color: var(--gray-600);
+}
+
+.Me {
+    color: var(--blue);
+}
+
+.rocketseat {
+    color: var(--purple-dark);
+}
+
+footer span {
+    color: var(--gray-200);
+}
